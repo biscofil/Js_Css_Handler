@@ -13,7 +13,7 @@ class Jscsshandler {
     private static $known = null;
 
     public function __construct() {
-        $p = site_url('public');
+        $p = base_url('public');
         self::$known = [
             'jquery' => [
                 '1.10.2' => ['js' => [$p . 'plugins/jquery/1.10.2/jquery.min.js']],
