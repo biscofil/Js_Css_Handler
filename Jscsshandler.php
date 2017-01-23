@@ -263,9 +263,6 @@ class Jscsshandler {
     }
 
     public static function out_js_files() {
-
-        self::includeKnown('analytics', '0');
-
         foreach (self::$js_files as $file) {
             echo '<script src="' . $file['url'] . '"';
             if (!is_null($file['params'])) {
